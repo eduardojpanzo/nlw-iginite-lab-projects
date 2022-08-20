@@ -9,9 +9,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        >img{
-            min-height: 45px;
+
+            >img{
+                min-height: 45px;
+            }
+            
+            >div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                button{
+                    height: 40px;
+                }
+            }
         }
     }
 
@@ -93,6 +104,10 @@
                     }
                 }
             }
+        }
+
+        .question-list{
+            margin-top: 32px;
         }
     }
 }
