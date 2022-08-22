@@ -7,6 +7,8 @@ import {ref, remove, update} from 'firebase/database';
 
 import logoImg from '../assets/images/logo.svg';
 import deleteImg from '../assets/images/delete.svg'
+import checkImg from '../assets/images/check.svg'
+import answerImg from '../assets/images/answer.svg'
 
 import '../styles/room.scss';
 import { Question } from '../components/Question';
@@ -40,7 +42,17 @@ export function AdminRoom(){
 
         navigate('/');
     }
+    const hadleCheckQuestionAsAnswered = async (questionId:string)=>{
+        await update(ref(database,`rooms/${roomID}/questions/${questionId}`),{
+            isAnswared:true
+        })
+    }
 
+    const hadleHighLihgtQuestion = async (questionId:string)=>{
+        await update(ref(database,`rooms/${roomID}/questions/${questionId}`),{
+            isHighlighted:true
+        })
+    }
     return(
         <div id="page-room">
             <header>
@@ -66,7 +78,25 @@ export function AdminRoom(){
                             key={question.id}
                             author={question.author}
                             content={question.content}
+                            isAnswared={question.isAnswared}
+                            isHighlighted={question.isHighlighted}
                         >
+                            {!question.isAnswared &&(
+                            <>
+                                <button
+                                    type="button"
+                                    onClick={()=>hadleCheckQuestionAsAnswered(question.id)}
+                                >
+                                    <img src={checkImg} alt="check pergunta como respondida" />
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={()=>hadleHighLihgtQuestion(question.id)}
+                                >
+                                    <img src={answerImg} alt="answer pergunta" />
+                                </button>
+                            </>
+                            )}
                             <button
                                 type="button"
                                 onClick={()=>hadleDeleteQuestion(question.id)}
