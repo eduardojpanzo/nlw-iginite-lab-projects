@@ -24,11 +24,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-$ git clone https://github.com/rocketseat-education/nlw-06-reactjs
-$ cd nlw-06-reactjs
+$ git clone https://github.com/eduardojpanzo/nlw-projects.git
+$ cd nlw-projects/letmeask
 ```
 
 Para iniciá-lo, siga os passos abaixo:
+
 ```bash
 # Instalar as dependências
 $ yarn
@@ -36,22 +37,22 @@ $ yarn
 # Iniciar o projeto
 $ yarn start
 ```
+
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
 
 ## 💻 Projeto
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática.
 
 Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
-
 
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através do link abaixo:
 
-- [Layout Web](https://www.figma.com/community/file/1009824839797878169/Letmeask) 
+- [Layout Web](https://www.figma.com/community/file/1009824839797878169/Letmeask)
 
 Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
@@ -63,7 +64,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 Feito com 💜 by Rocketseat 👋🏻
 
-Replicado por min [João Eduardo Panzo]((mailto:john404edwards@gmail.com)) encotre-me:
+Replicado por min [João Eduardo Panzo](<(mailto:john404edwards@gmail.com)>) encotre-me:
 
 [Meu linkedin](https://www.linkedin.com/in/jo%C3%A3o-eduardo-panzo-19672b237/) <br>
 [Meu facebook](https://web.facebook.com/joao.eduardo.52012548)<br>
