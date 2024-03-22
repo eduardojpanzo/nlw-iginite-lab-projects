@@ -24,8 +24,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-$ git clone https://github.com/eduardojpanzo/nlw-projects.git
-$ cd nlw-projects/letmeask
+$ git clone https://github.com/eduardojpanzo/nlw-iginite-lab-projects.git
+$ cd nlw-iginite-lab-projects/letmeask
 ```
 
 Para iniciá-lo, siga os passos abaixo:
